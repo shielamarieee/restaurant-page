@@ -1,1 +1,3 @@
-console.log('Hello, I\'m from index.js');
+import initialPageLoad from "./initialPageLoad";
+
+initialPageLoad();
