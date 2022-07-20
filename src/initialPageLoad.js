@@ -25,6 +25,7 @@ export default function initialPageLoad() {
   navlinks.appendChild(li1);
 
   const a1 = document.createElement('a');
+  a1.className = 'home';
   a1.textContent = 'Home';
   a1.setAttribute('href', '#');
   li1.appendChild(a1);
@@ -34,6 +35,7 @@ export default function initialPageLoad() {
   navlinks.appendChild(li2);
 
   const a2 = document.createElement('a');
+  a2.className = 'menu';
   a2.textContent = 'Menu';
   a2.setAttribute('href', '#');
   li2.appendChild(a2);
@@ -43,6 +45,7 @@ export default function initialPageLoad() {
   navlinks.appendChild(li3);
 
   const a3 = document.createElement('a');
+  a3.className = 'contact';
   a3.textContent = 'Contact';
   a3.setAttribute('href', '#');
   li3.appendChild(a3);
