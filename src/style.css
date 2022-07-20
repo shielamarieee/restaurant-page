@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+
+:root {
+  --accent-color: #e0cdac;
 }
 
 .container {
@@ -17,18 +22,20 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 15px;
 }
 
 .nav-links {
   display: flex;
   list-style-type: none;
-  gap: 15px;
+  gap: 30px;
 }
 
 .logo {
   font-size: 3rem;
   color: white;
+  font-family: 'Dancing Script', cursive;
 }
 
 .nav-links a {
@@ -52,20 +59,21 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 2px gray;
   margin-top: 100px;
   gap: 5px;
 }
 
 .tagline h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   letter-spacing: .2rem;
+  font-weight: 560;
 }
 
 .tagline p {
   font-size: 2rem;
   font-style: italic;
-  color: #e0cdac;
+  color: var(--accent-color);
 }
 
 .btn {
@@ -76,4 +84,45 @@
   margin-top: 10px;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/* Menu */
+.card {
+  background-color: rgba(22, 22, 22, 0.8);
+  border-radius: 5px;
+  width: 100vw;
+  height: 85vh;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dishes {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dish-name {
+  margin-bottom: 15px;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.menu-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-center img {width: 80%;}
+
+.menu-head {
+  font-size: 5rem;
+  color: var(--accent-color);
 }

@@ -114,6 +114,7 @@ export default function menuPage() {
   menuCard.appendChild(menuCenter);
 
   const menuHead = document.createElement('p');
+  menuHead.className = 'menu-head';
   menuHead.textContent = 'Menu';
   menuCenter.appendChild(menuHead);
 
