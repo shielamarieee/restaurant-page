@@ -67,10 +67,12 @@ export default function contactPage() {
   leftSide.appendChild(leftHeading);
 
   const small = document.createElement('p');
+  small.textContent = 'say hi to the team';
   small.className = 'small';
   leftHeading.appendChild(small);
 
   const large = document.createElement('p');
+  large.textContent = 'Contact Us';
   large.className = 'large';
   leftHeading.appendChild(large);
 
