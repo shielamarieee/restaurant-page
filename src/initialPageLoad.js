@@ -5,7 +5,7 @@ export default function initialPageLoad() {
   container.className = 'container';
   content.appendChild(container);
 
-  //Navbar
+  //------Navbar-----
   const navbar = document.createElement('nav');
   navbar.className = 'navbar';
   container.appendChild(navbar);
@@ -50,7 +50,7 @@ export default function initialPageLoad() {
   a3.setAttribute('href', '#');
   li3.appendChild(a3);
 
-  //Main
+  //-----Main-----
   const main = document.createElement('main');
   main.className = 'main';
   container.appendChild(main);

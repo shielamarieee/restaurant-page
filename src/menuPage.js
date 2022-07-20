@@ -1,64 +1,13 @@
 export default function menuPage() {
-
-  const content = document.getElementById('content');
-  
-  const container = document.createElement('div');
-  container.className = 'container';
-  content.appendChild(container);
-
-  //Navbar
-  const navbar = document.createElement('nav');
-  navbar.className = 'navbar';
-  container.appendChild(navbar);
-
-  const logo = document.createElement('h1');
-  logo.className = 'logo';
-  logo.textContent = 'Ramen';
-  navbar.appendChild(logo);
-
-  //Nav Links
-  const navlinks = document.createElement('ul');
-  navlinks.className = 'nav-links';
-  navbar.appendChild(navlinks);
-
-  //Home
-  const li1 = document.createElement('li');
-  navlinks.appendChild(li1);
-
-  const a1 = document.createElement('a');
-  a1.textContent = 'Home';
-  a1.setAttribute('href', '#');
-  li1.appendChild(a1);
-
-  //Menu
-  const li2 = document.createElement('li');
-  navlinks.appendChild(li2);
-
-  const a2 = document.createElement('a');
-  a2.textContent = 'Menu';
-  a2.setAttribute('href', '#');
-  li2.appendChild(a2);
-
-  //Contact
-  const li3 = document.createElement('li');
-  navlinks.appendChild(li3);
-
-  const a3 = document.createElement('a');
-  a3.textContent = 'Contact';
-  a3.setAttribute('href', '#');
-  li3.appendChild(a3);
-
-  //Main
-  const main = document.createElement('main');
-  main.className = 'main';
-  container.appendChild(main);
+  //-----Main-----
+  const main = document.querySelector('.main');
   
   const menuCard = document.createElement('div');
   menuCard.className = 'menu';
   menuCard.classList.add('card');
   main.appendChild(menuCard);
 
-  //Left Side
+  //-----Left Side-----
   const dishes1 = document.createElement('div');
   dishes1.className = 'dishes';
   menuCard.appendChild(dishes1);
@@ -108,7 +57,7 @@ export default function menuPage() {
   dishDetails3.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat sapien ac augue hendrerit, ut scelerisque felis tempor. Maecenas rutrum enim nec ligula efficitur laoreet nec ut augue.';
   dish3.appendChild(dishDetails3);
 
-  // Center
+  //-----Center-----
   const menuCenter = document.createElement('div');
   menuCenter.className = 'menu-center';
   menuCard.appendChild(menuCenter);
@@ -123,7 +72,7 @@ export default function menuPage() {
   img.setAttribute('alt', 'noodles.png');
   menuCenter.appendChild(img);
 
-  // Right Side 
+  //-----Right Side-----
   const dishes2 = document.createElement('div');
   dishes2.className = 'dishes';
   menuCard.appendChild(dishes2);
