@@ -180,3 +180,29 @@ input, textarea {
   flex-direction: column;
   line-height: 2rem;
 }
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.footer a {
+  color: white;
+}
+
+.my-info {
+  display: flex;
+  gap: 10px;
+}
+.fa-brands {
+  color: white;
+}
+
+.photo-info {
+  display: flex;
+  gap: 5px;
+}

@@ -71,4 +71,49 @@ export default function initialPageLoad() {
   button.className = 'btn';
   button.textContent = 'Order Online';
   tagline.appendChild(button);
+
+  //-----Footer-----
+  const footer = document.createElement('footer');
+  footer.className = 'footer';
+  container.appendChild(footer);
+
+  const myInfo = document.createElement('div');
+  myInfo.className = 'my-info';
+  footer.appendChild(myInfo);
+
+  const copyright = document.createElement('p');
+  copyright.textContent = `Copyright © ${new Date().getFullYear()} shielamarieee`;
+  myInfo.appendChild(copyright);
+
+  const githubLink = document.createElement('a');
+  githubLink.setAttribute('href', 'https://github.com/shielamarieee');
+  myInfo.appendChild(githubLink);
+
+  const githubIcon = document.createElement('i');
+  githubIcon.className = 'fa-brands';
+  githubIcon.classList.add('fa-github');
+  githubLink.appendChild(githubIcon);
+
+  const photoInfo = document.createElement('div');
+  photoInfo.className = 'photo-info';
+  footer.appendChild(photoInfo);
+
+  const text1 = document.createElement('p');
+  text1.textContent = 'Photo by';
+  photoInfo.appendChild(text1);
+
+  const link1 = document.createElement('a');
+  link1.textContent = ' Dovile Ramoskaite';
+  link1.setAttribute('href', 'https://unsplash.com/@dovilerm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText');
+  text1.appendChild(link1);
+
+  const text2 = document.createElement('p');
+  text2.textContent = 'on ';
+  photoInfo.appendChild(text2);
+
+  const link2 = document.createElement('a');
+  link2.textContent = 'Unsplash';
+  link2.setAttribute('href', 'https://unsplash.com/s/photos/ramen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText');
+  text2.appendChild(link2);
+
 }
