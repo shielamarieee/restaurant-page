@@ -54,9 +54,9 @@ export default function menuPage() {
   container.appendChild(main);
   
   const menuCard = document.createElement('div');
-  contactCard.className = 'menu';
-  contactCard.classList.add('card');
-  main.appendChild(contactCard);
+  menuCard.className = 'menu';
+  menuCard.classList.add('card');
+  main.appendChild(menuCard);
 
   //Left Side
   const dishes1 = document.createElement('div');
