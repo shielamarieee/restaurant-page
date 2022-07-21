@@ -44,6 +44,9 @@
   color: white;
 }
 
+.active {border-bottom: 1.5px solid var(--accent-color);}
+
+
 /* Main */
 
 .main {

@@ -1,3 +1,5 @@
+import noodlesImg from './images/noodles.png';
+
 export default function menuPage() {
   //-----Main-----
   const main = document.querySelector('.main');
@@ -68,7 +70,7 @@ export default function menuPage() {
   menuCenter.appendChild(menuHead);
 
   const img = document.createElement('img');
-  img.setAttribute('src', '../src/images/noodles.png');
+  img.src = noodlesImg;
   img.setAttribute('alt', 'noodles.png');
   menuCenter.appendChild(img);
 

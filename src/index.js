@@ -2,6 +2,7 @@ import initialPageLoad from "./initialPageLoad";
 import homePage from "./homePage";
 import menuPage from "./menuPage";
 import contactPage from "./contactPage";
+import './style.css';
 
 initialPageLoad();
 
