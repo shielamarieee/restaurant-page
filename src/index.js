@@ -21,18 +21,25 @@ homeTab.addEventListener('click', () => {
   console.log('1');
 });
 
+const orderBtn = document.querySelector('.btn');
+orderBtn.addEventListener('click', () => {
+  removeChilds(main);
+  menuPage();
+  console.log('2')
+})
+
 const menuTab = document.querySelector('.menu');
 menuTab.addEventListener('click', () => {
   removeChilds(main);
   menuPage();
-  console.log('2');
+  console.log('3');
 });
 
 const contactTab = document.querySelector('.contact');
 contactTab.addEventListener('click', () => {
   removeChilds(main);
   contactPage();
-  console.log('3');
+  console.log('4');
 });
 
 
