@@ -87,6 +87,7 @@ export default function initialPageLoad() {
 
   const githubLink = document.createElement('a');
   githubLink.setAttribute('href', 'https://github.com/shielamarieee');
+  githubLink.setAttribute('target', '_blank');
   myInfo.appendChild(githubLink);
 
   const githubIcon = document.createElement('i');
@@ -105,6 +106,7 @@ export default function initialPageLoad() {
   const link1 = document.createElement('a');
   link1.textContent = ' Dovile Ramoskaite';
   link1.setAttribute('href', 'https://unsplash.com/@dovilerm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText');
+  link1.setAttribute('target', '_blank');
   text1.appendChild(link1);
 
   const text2 = document.createElement('p');
@@ -114,6 +116,7 @@ export default function initialPageLoad() {
   const link2 = document.createElement('a');
   link2.textContent = 'Unsplash';
   link2.setAttribute('href', 'https://unsplash.com/s/photos/ramen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText');
+  link2.setAttribute('target', '_blank');
   text2.appendChild(link2);
 
 }
