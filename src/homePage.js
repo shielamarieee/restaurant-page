@@ -15,7 +15,7 @@ export default function homePage() {
   tagline.appendChild(p);
 
   const button = document.createElement('button');
-  button.className = 'btn';
+  button.className = 'order-btn';
   button.textContent = 'Order Online';
   tagline.appendChild(button);
 }

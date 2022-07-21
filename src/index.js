@@ -15,32 +15,55 @@ const removeChilds = (parent) => {
 let main = document.querySelector('.main');
 
 const homeTab = document.querySelector('.home');
-homeTab.addEventListener('click', () => {
+homeTab.addEventListener('click', (e) => {
   removeChilds(main);
   homePage();
+  if (e.target.classList.contains("active")) return;
+    setActiveButton(homeTab);
   console.log('1');
 });
 
-const orderBtn = document.querySelector('.btn');
-orderBtn.addEventListener('click', () => {
+const orderBtn = document.querySelector('.order-btn');
+orderBtn.addEventListener('click', (e) => {
   removeChilds(main);
   menuPage();
+  if (e.target.classList.contains("active")) return;
+    setActiveButton(menuTab);
   console.log('2')
 })
 
 const menuTab = document.querySelector('.menu');
-menuTab.addEventListener('click', () => {
+menuTab.addEventListener('click', (e) => {
   removeChilds(main);
   menuPage();
+  if (e.target.classList.contains("active")) return;
+    setActiveButton(menuTab);
   console.log('3');
 });
 
 const contactTab = document.querySelector('.contact');
-contactTab.addEventListener('click', () => {
+contactTab.addEventListener('click', (e) => {
   removeChilds(main);
   contactPage();
+  if (e.target.classList.contains("active")) return;
+    setActiveButton(contactTab);
   console.log('4');
 });
+
+//nav buttons
+
+function setActiveButton(button) {
+  const navBtns = document.querySelectorAll('.btn');
+
+  navBtns.forEach((button) => {
+    if (button !== this) {
+      button.classList.remove("active");
+    }
+  });
+
+  button.classList.add("active");
+}
+
 
 
 
