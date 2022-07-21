@@ -6,13 +6,28 @@ import './style.css';
 
 initialPageLoad();
 
+//switch tab logic
+let main = document.querySelector('.main');
+
 //wipe out contents
 const removeChilds = (parent) => {
   while(parent.lastChild) {
     parent.removeChild(parent.lastChild);
   }
 }
-let main = document.querySelector('.main');
+
+//current active button 
+function setActiveButton(button) {
+  const navBtns = document.querySelectorAll('.btn');
+
+  navBtns.forEach((button) => {
+    if (button !== this) {
+      button.classList.remove("active");
+    }
+  });
+
+  button.classList.add("active");
+}
 
 const homeTab = document.querySelector('.home');
 homeTab.addEventListener('click', (e) => {
@@ -50,20 +65,10 @@ contactTab.addEventListener('click', (e) => {
   console.log('4');
 });
 
-//nav buttons
-
-function setActiveButton(button) {
-  const navBtns = document.querySelectorAll('.btn');
-
-  navBtns.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove("active");
-    }
-  });
-
-  button.classList.add("active");
-}
-
+export {
+  removeChilds,
+  setActiveButton
+};
 
 
 
